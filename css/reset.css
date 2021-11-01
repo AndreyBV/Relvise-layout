@@ -38,18 +38,3 @@ body {
 	font-family: Montserrat, sans-serif;
 	font-weight: 500;
 }
-.wrapper {
-	min-height: 100%;
-	overflow: hidden;
-}
-
-._container {
-	max-width: 1045px;
-	padding: 0 15px;
-	margin: 0 auto;
-	box-sizing: content-box;
-	/* ! Чтобы избежать прилипания контента при изменении размера страницы можно:
-		- добавить падинги и включить их размер в общий размер для box-sizing: border-box 
-		- только добавить падинги для box-sizing:content-box
-	*/
-}
