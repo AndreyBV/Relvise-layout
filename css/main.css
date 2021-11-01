@@ -105,7 +105,13 @@
 }
 .main__face-page {
 }
-
+.main__services {
+	position: relative;
+	z-index: 2;
+	/* Карточки "Services" смещаются именно таким способом по причине того, что
+	контент следующий за ними будет следовать за ними  */
+	margin: -111px 0 0 0;
+}
 /*
  * ─── FACE-PAGE ──────────────────────────────────────────────────────────────────
  */
@@ -207,6 +213,85 @@
 	.face-page__image img {
 		opacity: 0.3;
 	}
+}
+
+/*
+ * ─── SERVICES ───────────────────────────────────────────────────────────────────
+ */
+
+.services {
+}
+.services__container {
+}
+.services__body {
+}
+@media (min-width: 670px) {
+	.services__body {
+		display: flex;
+		flex-wrap: wrap;
+		/* ? Разобраться более подробно */
+		margin: 0 -15px;
+	}
+}
+.services__column {
+	flex: 0 1 33.333%;
+}
+
+@media (min-width: 670px) {
+	.services__column {
+		/* ? Разобраться более подробно */
+		padding: 0 15px;
+	}
+}
+@media (max-width: 992px) {
+	.services__column {
+		flex: 0 1 50%;
+	}
+	.services__column:not(:last-child) {
+		margin: 0 0 30px 0;
+	}
+	.services__column:last-child {
+		flex: 0 1 100%;
+	}
+}
+.services__item {
+	/* ? Можно использовать совместно с wrap */
+	/* min-width: 300px; */
+	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+	background-color: white;
+	padding: 35px;
+	height: 100%;
+}
+@media (max-width: 479px) {
+	.services__item {
+		padding: 25px;
+	}
+}
+.item-services {
+}
+.item-services_green {
+	background: #0d5c63;
+}
+.item-services_green .item-services__title,
+.item-services_green .item-services__text {
+	color: white;
+}
+
+.item-services > *:not(:last-child) {
+	margin: 0 0 10px 0;
+}
+.item-services__icon {
+}
+.item-services__title {
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.1px;
+	line-height: calc(32 / 24);
+}
+.item-services__text {
+	letter-spacing: 0.1px;
+	line-height: calc(20 / 14);
+	color: #737373;
 }
 
 /*
