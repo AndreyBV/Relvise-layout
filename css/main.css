@@ -126,6 +126,8 @@ body {
 }
 .main__advice {
 }
+.main__cutaway {
+}
 /*
  * ─── HEADER-BLOCK ───────────────────────────────────────────────────────────────
  */
@@ -529,6 +531,145 @@ body {
 .item-advice__img img {
 	/* width: 100%; */
 }
+
+/*
+ * ─── CUTAWAY ────────────────────────────────────────────────────────────────────
+ */
+
+.cutaway {
+	padding: 100px 0 136px;
+	background-color: white;
+}
+@media (max-width: 960px) {
+	.cutaway {
+		padding: 50px 0 50px;
+	}
+}
+@media (max-width: 650px) {
+	.cutaway {
+		padding: 15px 0 50px;
+	}
+}
+.cutaway__container {
+}
+.cutaway__header {
+	margin: 0 0 100px 0;
+}
+@media (max-width: 960px) {
+	.cutaway__header {
+		margin: 0 0 30px 0;
+	}
+}
+@media (max-width: 650px) {
+	.cutaway__header {
+		margin: 0 0 15px 0;
+	}
+}
+.cutaway__body {
+	display: flex;
+	align-items: flex-start;
+	/* justify-content: space-between; */
+}
+@media (max-width: 960px) {
+	.cutaway__body {
+		flex-direction: column-reverse;
+		/* * Необходимо для того, чтобы видео не пропадало при переразметке */
+		/* * Т.к. до этого был flex-start, то видео прижималось к левому краю */
+		align-items: stretch;
+	}
+}
+
+.cutaway__vido {
+	flex: 0 0 57%;
+	position: relative;
+	padding: 0 0 42.25% 0;
+}
+@media (max-width: 960px) {
+	.cutaway__vido {
+		padding: 0 0 56.25% 0;
+	}
+}
+.cutaway__vido:not(:last-child) {
+	margin: 30px 0 0 0;
+}
+.cutaway__vido iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.cutaway__content {
+	/* * Необходимо для того, чтобы контент занимал 
+	100% ширины в случае отсутствия видео */
+	flex: 1 1 auto;
+	padding: 0 0 0 121px;
+}
+@media (max-width: 1080px) {
+	.cutaway__content {
+		padding: 0 0 0 40px;
+	}
+}
+@media (max-width: 960px) {
+	.cutaway__content {
+		padding: 0;
+	}
+}
+
+.content-cutaway {
+}
+
+.content-cutaway__header {
+	text-align: left;
+	padding: 20px 0;
+}
+@media (max-width: 1080px) {
+	.content-cutaway__header {
+		padding: 0;
+	}
+}
+.content-cutaway__header:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.content-cutaway__items {
+}
+
+.content-cutaway__item:not(:last-child) {
+	margin: 0 0 30px 0;
+}
+.item-content-cutaway {
+	display: flex;
+	/* justify-content: space-between; */
+}
+.item-content-cutaway__icon {
+	flex: 0 0 32px;
+}
+.item-content-cutaway__body {
+	padding-left: 20px;
+}
+
+.item-content-cutaway__title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: calc(24 / 16);
+	letter-spacing: 0.1px;
+}
+.item-content-cutaway__text {
+	margin: 5px 0 0 0;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: calc(24 / 16);
+	letter-spacing: 0.2px;
+	/* * Позволяет установить многоточие для слишком длинного текста */
+	/* ! Изучить, как исправить ситуацию ограничения ширины */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 225px;
+}
+
 /*
  * ─── FOOTER ─────────────────────────────────────────────────────────────────────
  */
