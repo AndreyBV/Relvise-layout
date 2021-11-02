@@ -128,6 +128,8 @@ body {
 }
 .main__cutaway {
 }
+.main__clients {
+}
 /*
  * ─── HEADER-BLOCK ───────────────────────────────────────────────────────────────
  */
@@ -668,6 +670,32 @@ body {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 225px;
+}
+
+/*
+ * ─── CLIENTS ────────────────────────────────────────────────────────────────────
+ */
+
+.clients {
+	padding: 40px 0;
+}
+.clients__container {
+}
+
+.clients__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.clients__item {
+	flex: 0 1 16.6667%;
+	text-align: center;
+	padding: 10px 15px;
+	min-width: 140px;
+}
+.clients__item img {
+	max-width: 100%;
 }
 
 /*
