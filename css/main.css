@@ -124,7 +124,8 @@ body {
 }
 .main__achievements {
 }
-
+.main__advice {
+}
 /*
  * ─── HEADER-BLOCK ───────────────────────────────────────────────────────────────
  */
@@ -388,7 +389,6 @@ body {
 	}
 }
 .achievements__item {
-	background-color: white;
 	padding: 30px;
 	/* * Баг макета */
 	/* padding: 30px 40px; */
@@ -399,6 +399,7 @@ body {
 	}
 }
 .item-achievement {
+	background-color: white;
 	text-align: center;
 	font-weight: 700;
 	height: 100%;
@@ -431,6 +432,103 @@ body {
 	color: #737373;
 }
 
+/*
+ * ─── ADVICE ─────────────────────────────────────────────────────────────────────
+ */
+
+.advice {
+	padding: 125px 0 80px;
+}
+@media (max-width: 1040px) {
+	.advice {
+		padding: 0px 0 80px;
+	}
+}
+
+.advice__container {
+}
+
+.advice__header {
+	margin: 0 0 45px 0;
+}
+@media (max-width: 630px) {
+	.advice__header {
+		margin: 0 0 20px 0;
+	}
+}
+
+/* * HEADER-BLOCK */
+
+.advice__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px -30px;
+}
+@media (max-width: 630px) {
+	.advice__body {
+		margin: 0 -15px -15px;
+	}
+}
+.item-advice__column {
+	padding: 0 15px;
+	margin: 0 0 30px 0;
+	flex: 0 1 25%;
+}
+@media (max-width: 1040px) {
+	.item-advice__column {
+		flex: 0 1 50%;
+	}
+}
+@media (max-width: 630px) {
+	.item-advice__column {
+		margin: 0 0 15px 0;
+		flex: 0 1 100%;
+	}
+}
+.advice__item {
+}
+.item-advice {
+	background-color: white;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+}
+
+.item-advice__info-advice {
+}
+.info-advice {
+	padding: 30px;
+	flex: 1 1 auto;
+}
+@media (max-width: 630px) {
+	.info-advice {
+		padding: 15px;
+	}
+}
+.info-advice > *:not(:last-child) {
+	margin: 0 0 15px 0;
+}
+.info-advice__header {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: calc(24 / 16);
+	letter-spacing: 0.1px;
+}
+.info-advice__text {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(20 / 14);
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+
+.item-advice__img {
+	padding: 0 0 60% 0;
+}
+.item-advice__img img {
+	/* width: 100%; */
+}
 /*
  * ─── FOOTER ─────────────────────────────────────────────────────────────────────
  */
