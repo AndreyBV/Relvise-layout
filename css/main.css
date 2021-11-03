@@ -135,6 +135,8 @@ body {
 }
 .main__contacts {
 }
+.main__contact-us {
+}
 /*
  * ─── HEADER-BLOCK ───────────────────────────────────────────────────────────────
  */
@@ -925,6 +927,70 @@ body {
 	color: white;
 }
 
+/*
+ * ─── CONTACT-US ─────────────────────────────────────────────────────────────────
+ */
+
+.contact-us {
+	padding: 40px 0;
+	background: white;
+}
+.contact_us__container {
+}
+.contact-us__body {
+}
+
+.contact-us__content {
+	padding: 0 0 20px 0;
+}
+@media (min-width: 800px) {
+	.contact-us__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.contact-us__content {
+		padding: 0 20px 0 0;
+	}
+}
+.contact-us__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: calc(32 / 24);
+	letter-spacing: 0.1px;
+	color: inherit;
+}
+.contact-us__title:not(:last-child) {
+	margin: 0 0 10px 0;
+}
+.contact-us__text {
+	line-height: calc(20 / 14);
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+.contact-us__button {
+	font-weight: 700;
+	line-height: calc(28 / 14);
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #ffffff;
+	min-width: 58px;
+
+	background: #ff7b47;
+	border-radius: 5px;
+	padding: 15px 40px;
+	/* margin: 0 35px 0 0; */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: all 0.2s ease-in;
+}
+.contact-us__button:hover {
+	background-color: #c45e35;
+	color: white;
+}
 /*
  * ─── FOOTER ─────────────────────────────────────────────────────────────────────
  */
